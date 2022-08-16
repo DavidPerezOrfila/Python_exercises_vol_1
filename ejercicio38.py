@@ -1,16 +1,18 @@
-#Exercise 38
+# Exercise 38
 """
-In mathematics, the symmetric difference of two sets is the set of elements
-which are in either of the sets, but not in their intersection.
-Two following sets are given:
-A = {2, 4, 6, 8}
-B = {4, 10}
-Using the appropriate method, extract the symmetrical difference of sets A and
-B and print the result to the console as shown below.
+We have two sets of customer IDs:
+ad1_id = {'001', '002', '003'}
+ad2_id = {'002', '003', '007'}
+Each set stores the id of the customers who made the purchase based on the
+specific ad. We have two ads. Each customer can use the offer only twice in
+campaign. Choose the ID of the customers to whom you can send another ad (or
+ids that only appeared once in both sets).
 Expected result:
-Symmetric difference: {2, 6, 8, 10}
+Selected ID: { '007', '001'}
+Note: Remember that the set is an unordered data structure. You may get a
+different order of items than the expected result. You don't have to worry about it.
 """
-A = {2, 4, 6, 8}
-B = {4, 10}
-sym_diff = A.symmetric_difference(B)
-print(f'Symmetric difference: {sym_diff}')
+ad1_id = {'001', '002', '003'}
+ad2_id = {'002', '003', '007'}
+result = ad1_id.symmetric_difference(ad2_id)
+print(f'Selected ID: {result}')

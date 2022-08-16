@@ -1,18 +1,18 @@
 # Exercise 39
+
 """
-We have two sets of customer IDs:
-ad1_id = {'001', '002', '003'}
-ad2_id = {'002', '003', '007'}
-Each set stores the id of the customers who made the purchase based on the
-specific ad. We have two ads. Each customer can use the offer only twice in
-campaign. Choose the ID of the customers to whom you can send another ad (or
-ids that only appeared once in both sets).
+Two customer ID sets are given. The first one tells you whether a person
+clicked on the banner ad. Second, whether the person purchased the product:
+is_clicked = {'9001', '9002', '9005'}
+is_bought = {'9002', '9004', '9005'}
+Return the ID of those customers who clicked on the ad and bought the product.
 Expected result:
-Selected ID: { '007', '001'}
+Customer ID: { '9002', '9005'}
 Note: Remember that the set is an unordered data structure. You may get a
-different order of items than the expected result. You don't have to worry about it.
+different order of items than the expected result. You don't have to worry
+about it.
 """
-ad1_id = {'001', '002', '003'}
-ad2_id = {'002', '003', '007'}
-result = ad1_id.symmetric_difference(ad2_id)
-print(f'Selected ID: {result}')
+is_clicked = {'9001', '9002', '9005'}
+is_bought = {'9002', '9004', '9005'}
+result = is_clicked.intersection(is_bought)
+print(f'Customer ID: {result}')

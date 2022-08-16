@@ -1,18 +1,12 @@
 # Exercise 40
-
 """
-Two customer ID sets are given. The first one tells you whether a person
-clicked on the banner ad. Second, whether the person purchased the product:
-is_clicked = {'9001', '9002', '9005'}
-is_bought = {'9002', '9004', '9005'}
-Return the ID of those customers who clicked on the ad and bought the product.
+Two following tuples are given:
+dji1 = ('AAPL.US', 'IBM.US', 'MSFT.US')
+dji2 = ('HD.US', 'GS.US', 'NKE.US')
+Combine these tuples into one as shown below and print the result to the console.
 Expected result:
-Customer ID: { '9002', '9005'}
-Note: Remember that the set is an unordered data structure. You may get a
-different order of items than the expected result. You don't have to worry
-about it.
+('AAPL.US', 'IBM.US', 'MSFT.US', 'HD.US', 'GS.US', 'NKE.US')
 """
-is_clicked = {'9001', '9002', '9005'}
-is_bought = {'9002', '9004', '9005'}
-result = is_clicked.intersection(is_bought)
-print(f'Customer ID: {result}')
+dji1 = ('AAPL.US', 'IBM.US', 'MSFT.US')
+dji2 = ('HD.US', 'GS.US', 'NKE.US')
+print(dji1 + dji2)

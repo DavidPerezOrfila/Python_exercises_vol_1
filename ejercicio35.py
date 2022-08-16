@@ -1,15 +1,13 @@
 # Exercise 35
 """
-From the given url:
-url = 'https://e-smartdata.teachable.com/p/sciezka-data-scientist-machine-learning-engineer'
-extract the slug after the last character '/'. Then replace all dashes with spaces and print the result to the console as shown below.
+The following set is given:
+subjects = {'mathematics', 'biology'}
+Using the appropriate method add 'english' to this set. In response print subjects set to the console.
 Expected result:
-sciezka data scientist machine learning engineer
+{'biology', 'mathematics', 'english'}
+
+Note: Remember that the set is an unordered data structure. You may get a different order of items than the expected result.
 """
-url = 'https://e-smartdata.teachable.com/p/sciezka-data-scientist-machine-learning-engineer'
-url_as_list= url.split("/")
-print(url_as_list[-1].replace("-", " "))
-# Solution 2
-name = url.split('/')[-1]
-name = name.replace('-', ' ')
-print(name)
+subjects = {'mathematics', 'biology'}
+subjects.add('english')
+print(subjects)
