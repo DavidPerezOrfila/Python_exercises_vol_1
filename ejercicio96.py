@@ -9,7 +9,7 @@ Try to open file.txt using the above code. If the file.txt does not exist, print
 'File not found.'
 """
 try:
-    with open('file.txt', 'r') as file:
+    with open('file.txt', 'r', encoding='utf-8') as file:
         content = file.read()
     print(content)
 except FileNotFoundError:
