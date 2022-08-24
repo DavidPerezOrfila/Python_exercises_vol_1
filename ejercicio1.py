@@ -1,13 +1,14 @@
 # Exercise 1
 """
-Write a program that calculates the area of a circle with a radius = 5. Use an approximate value of pi:
-pi = 3.14
+Write a program that calculates the AREA of a circle with a RADIUS = 5.
+Use an approximate value of PI:
+PI = 3.14
 Print the result to the console as shown below.
 Expected result:
-Area: 78.5
+AREA: 78.5
 """
-radius = 5
-pi = 3.14
+RADIUS = 5
+PI = 3.14
 
-area = pi * radius**2
-print(f'Area: {area}')
+AREA = PI * RADIUS**2
+print(f'AREA: {AREA}')
