@@ -13,6 +13,8 @@ Note! You only need to define the function.
 
 
 def multi(numbers):
+    """accepts an iterable object (list, tuple) as an argument and returns the
+product of all elements of this iterable object"""
     result = 1
     for number in numbers:
         result *= number
