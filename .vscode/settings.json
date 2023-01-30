@@ -104,5 +104,7 @@
         "Boombit",
         "playway",
         "Projekt"
-    ]
+    ],
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true
 }
